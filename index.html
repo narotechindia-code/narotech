@@ -1,0 +1,1006 @@
+<!doctype html>
+<html lang="en" class="light">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=5.0"
+        />
+        <meta name="theme-color" content="#0067FF" />
+        <title>NaroTech Community</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
+        <link rel="stylesheet" href="styles.css" />
+        <meta
+            name="title"
+            content="NaroTech | Professional Digital Solutions & Software Ecosystem"
+        />
+        <meta
+            name="description"
+            content="NaroTech is a premier digital solutions provider established in 2025. Explore Naroapp, Nion AI, Bitfile, and Directli. Engineering high-performance utilities for the modern professional ecosystem. Developed by Azad Bharatiyan."
+        />
+        <meta
+            name="keywords"
+            content="NaroTech, Naroapp, Nion AI, Bitfile, Directli, Reszumes, Azad Bharatiyan, Software Downloader, AI Companion, Local File Sharing, Link Converter, Resume Creator, Indian Developer, Solo Developer, Tamil Nadu Tech, Free Software Utilities, Windows Tools, Productivity Apps, Zoho Style Interface, Professional Web Design"
+        />
+        <meta name="author" content="Azad Bharatiyan" />
+        <meta name="owner" content="NaroTech Digital Brand" />
+        <meta name="copyright" content="NaroTech 2025" />
+
+        <!-- SEO: ROBOTS & INDEXING -->
+        <meta
+            name="robots"
+            content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        />
+        <meta name="googlebot" content="index, follow" />
+        <meta name="bingbot" content="index, follow" />
+        <meta name="revisit-after" content="7 days" />
+        <meta name="rating" content="General" />
+        <meta name="distribution" content="Global" />
+
+        <!-- SEO: GEO-TAGGING (Tamil Nadu, India) -->
+        <meta name="geo.region" content="IN-TN" />
+        <meta name="geo.placename" content="Tamil Nadu" />
+        <meta name="geo.position" content="11.1271;78.6569" />
+        <meta name="ICBM" content="11.1271, 78.6569" />
+
+        <!-- SOCIAL: OPEN GRAPH (Facebook/LinkedIn/WhatsApp) -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://narotech.web.app/" />
+        <meta property="og:site_name" content="NaroTech" />
+        <meta
+            property="og:title"
+            content="NaroTech | Engineering the Digital Future"
+        />
+        <meta
+            property="og:description"
+            content="Discover the NaroTech ecosystem: Naroapp (Software Downloader), Nion AI (Academic Companion), and Bitfile (Local Sharing). Built for efficiency."
+        />
+        <meta property="og:image" content="./icon/icon.png" />
+        <meta property="og:image:alt" content="NaroTech Brand Logo Blue" />
+        <meta property="og:locale" content="en_IN" />
+
+        <!-- SOCIAL: TWITTER CARDS -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@NaroTech" />
+        <meta name="twitter:creator" content="@AzadBharatiyan" />
+        <meta
+            name="twitter:title"
+            content="NaroTech | Professional Digital Solutions"
+        />
+        <meta
+            name="twitter:description"
+            content="Explore high-performance tools: Naroapp, Nion AI, and more. Solo-developed engineering excellence from India."
+        />
+        <meta name="twitter:image" content="./icon/icon.png" />
+
+        <!-- TECHNICAL: PRECONNECT & DNS PREFETCH -->
+        <link rel="preconnect" href="https://cdn.tailwindcss.com" />
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+        <link rel="dns-prefetch" href="https://cdn.tailwindcss.com" />
+        <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+
+        <!-- CANONICAL URL -->
+        <link rel="canonical" href="https://narotech.web.app/" />
+        <!-- Tailwind CSS CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Font Awesome Icons -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+    </head>
+    <body class="antialiased">
+        <!-- THEME TOGGLE (Sharp) -->
+        <div class="fixed top-4 right-4 z-[1100]">
+            <button
+                id="themeToggle"
+                class="w-10 h-10 rounded-[2px] bg-blue-600 text-white shadow-md flex items-center justify-center hover:bg-blue-700 transition-colors"
+            >
+                <i id="themeIcon" class="fa fa-moon text-xs"></i>
+            </button>
+        </div>
+
+        <!-- DESKTOP HEADER -->
+        <header
+            class="desktop-header fixed top-0 w-full z-[1000] hidden md:block"
+        >
+            <div
+                class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between"
+            >
+                <div class="flex items-center space-x-3">
+                    <div
+                        class="w-8 h-8 flex items-center justify-center rounded-[2px] bg-transparent"
+                    >
+                        <img
+                            src="icon/narotech-textlogo-bbg.png"
+                            class="logo-top-header w-20"
+                            alt="NaroTech logo"
+                        />
+                    </div>
+
+                    <span class="text-xl custom-font tracking-tight text-main"
+                        >NaroTech</span
+                    >
+                </div>
+                <nav class="desktop-links flex space-x-8">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#products" class="nav-link">Products</a>
+                    <a href="#brand" class="nav-link">Brand</a>
+                    <a href="#development" class="nav-link">Development</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- MOBILE BOTTOM NAVBAR -->
+        <nav
+            class="mobile-nav fixed bottom-0 w-full md:hidden flex justify-around items-center py-3"
+        >
+            <a
+                href="#home"
+                class="flex flex-col items-center text-[10px] space-y-1 text-blue-600"
+            >
+                <i class="fa fa-home text-lg"></i>
+                <span class="font-medium">Home</span>
+            </a>
+            <a
+                href="#products"
+                class="flex flex-col items-center text-[10px] space-y-1 text-subtle"
+            >
+                <i class="fa fa-layer-group text-lg"></i>
+                <span class="font-medium">Products</span>
+            </a>
+            <a
+                href="#brand"
+                class="flex flex-col items-center text-[10px] space-y-1 text-subtle"
+            >
+                <i class="fa fa-shield-halved text-lg"></i>
+                <span class="font-medium">Brand</span>
+            </a>
+            <a
+                href="#development"
+                class="flex flex-col items-center text-[10px] space-y-1 text-subtle"
+            >
+                <i class="fa fa-code text-lg"></i>
+                <span class="font-medium">Dev</span>
+            </a>
+            <a
+                href="#contact"
+                class="flex flex-col items-center text-[10px] space-y-1 text-subtle"
+            >
+                <i class="fa fa-headset text-lg"></i>
+                <span class="font-medium">Support</span>
+            </a>
+        </nav>
+
+        <main class="pt-16 md:pt-0">
+            <!-- HERO SECTION -->
+            <img
+                src="icon/narotech-textlogo-bbg.png"
+                class="logo-top-hero"
+                alt="logotop"
+            />
+            <section
+                style="margin-top: -100px"
+                id="home"
+                class="min-h-[85vh] flex flex-col justify-center items-center text-center animate-fade"
+            >
+                <span
+                    class="px-3 py-1 bg-blue-50 dark:bg-blue-900/20 text-blue-600 text-xs font-bold uppercase tracking-wider mb-6 rounded-[2px]"
+                    >Est. 2025</span
+                >
+                <h1
+                    class="text-5xl md:text-6xl font-bold mb-6 leading-tight tracking-tight text-main"
+                >
+                    Engineering the
+                    <span class="text-blue-600">Digital</span> Future.
+                </h1>
+                <p
+                    class="text-lg text-secondary max-w-2xl mx-auto mb-10 leading-relaxed font-light"
+                >
+                    NaroTech delivers high-performance software solutions, AI
+                    companions, and utility tools designed for the modern
+                    professional ecosystem.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a
+                        href="#products"
+                        class="btn-primary flex items-center space-x-2"
+                    >
+                        <i class="fa fa-rocket"></i>
+                        <span>Explore Products</span>
+                    </a>
+                    <a
+                        href="#brand"
+                        class="btn-outline flex items-center space-x-2"
+                    >
+                        <span>The Naro Story</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- OUR PRODUCTS -->
+            <section id="products" class="bg-subtle-section">
+                <div class="text-center mb-16">
+                    <h2
+                        class="text-3xl font-bold mb-4 flex items-center justify-center space-x-3 text-main"
+                    >
+                        <i class="fa fa-cubes text-blue-600 text-xl"></i>
+                        <span>Our Ecosystem</span>
+                    </h2>
+                    <div class="w-12 h-1 bg-blue-600 mx-auto rounded-sm"></div>
+                </div>
+
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+                >
+                    <!-- Naroapp -->
+                    <div class="naro-card p-8 flex flex-col h-full">
+                        <div
+                            class="w-12 h-12 rounded-sm flex items-center justify-center mb-6 text-blue-600"
+                        >
+                            <img
+                                class="logo-for-app"
+                                src="images/naroapp-logo-nobg.png"
+                                alt="grapper-logo"
+                            />
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Naroapp</h3>
+                        <p class="text-sm mb-8 flex-grow leading-relaxed">
+                            The All-in-One Software and Apps Downloader for
+                            Windows. Streamline your workstation setup with a
+                            single unified interface.
+                        </p>
+                        <a
+                            href="https://naroapp.store"
+                            target="_blank"
+                            class="w-full py-2.5 text-center border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-sm hover:border-blue-600 hover:text-blue-600 transition-colors text-sm font-medium"
+                        >
+                            Visit naroapp.store
+                            <i class="fa fa-arrow-right ml-1 text-xs"></i>
+                        </a>
+                    </div>
+
+                    <!-- Nion AI -->
+                    <div class="naro-card p-8 flex flex-col h-full">
+                        <div
+                            class="w-12 h-12 rounded-sm flex items-center justify-center mb-6 text-blue-600"
+                        >
+                            <img
+                                class="logo-for-app"
+                                src="images/nionai-logo-nobg.png"
+                                alt="grapper-logo"
+                            />
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Nion AI</h3>
+                        <p class="text-sm mb-8 flex-grow leading-relaxed">
+                            The Ultimate AI Companion for Academic and
+                            Professional works. Advanced reasoning and
+                            processing at your fingertips.
+                        </p>
+                        <a
+                            href="https://nionai.web.app"
+                            target="_blank"
+                            class="w-full py-2.5 text-center border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-sm hover:border-blue-600 hover:text-blue-600 transition-colors text-sm font-medium"
+                        >
+                            Visit nionai.web.app
+                            <i class="fa fa-arrow-right ml-1 text-xs"></i>
+                        </a>
+                    </div>
+
+                    <!-- Bitfile -->
+                    <div class="naro-card p-8 flex flex-col h-full">
+                        <div
+                            class="w-12 h-12 rounded-sm flex items-center justify-center mb-6 text-blue-600"
+                        >
+                            <img
+                                class="logo-for-app"
+                                src="images/bitfiles-logo-nobg.png"
+                                alt="grapper-logo"
+                            />
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Bitfile</h3>
+                        <p class="text-sm mb-8 flex-grow leading-relaxed">
+                            Lightning-fast file sharing within local networks.
+                            Secure, private, and optimized for high-bandwidth
+                            transfers.
+                        </p>
+                        <a
+                            href="https://bitfile.web.app"
+                            target="_blank"
+                            class="w-full py-2.5 text-center border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-sm hover:border-blue-600 hover:text-blue-600 transition-colors text-sm font-medium"
+                        >
+                            Visit bitfile.web.app
+                            <i class="fa fa-arrow-right ml-1 text-xs"></i>
+                        </a>
+                    </div>
+
+                    <!-- Directli -->
+                    <div class="naro-card p-8 flex flex-col h-full">
+                        <div
+                            class="w-12 h-12 rounded-sm flex items-center justify-center mb-6 text-blue-600"
+                        >
+                            <img
+                                class="logo-for-app"
+                                src="images/directli-logo-nobg.png"
+                                alt="grapper-logo"
+                            />
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Directli</h3>
+                        <p class="text-sm mb-8 flex-grow leading-relaxed">
+                            Efficient link converter for Google Drive and naro
+                            Drive. Generate direct download links instantly.
+                        </p>
+                        <a
+                            href="https://directli.web.app"
+                            target="_blank"
+                            class="w-full py-2.5 text-center border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-sm hover:border-blue-600 hover:text-blue-600 transition-colors text-sm font-medium"
+                        >
+                            Visit directli.web.app
+                            <i class="fa fa-arrow-right ml-1 text-xs"></i>
+                        </a>
+                    </div>
+
+                    <!-- Reszumes -->
+                    <div class="naro-card p-8 flex flex-col h-full">
+                        <div
+                            class="w-12 h-12 rounded-sm flex items-center justify-center mb-6 text-blue-600"
+                        >
+                            <img
+                                class="logo-for-app"
+                                src="images/reszumes-logo-nobg.png"
+                                alt="grapper-logo"
+                            />
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Reszumes</h3>
+                        <p class="text-sm mb-8 flex-grow leading-relaxed">
+                            Unified resume creator for professionals. Build
+                            clean, ATS-friendly resumes in minutes with smart
+                            templates.
+                        </p>
+                        <a
+                            href="https://reszumes.web.app"
+                            target="_blank"
+                            class="w-full py-2.5 text-center border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-sm hover:border-blue-600 hover:text-blue-600 transition-colors text-sm font-medium"
+                        >
+                            Visit reszumes.web.app
+                            <i class="fa fa-arrow-right ml-1 text-xs"></i>
+                        </a>
+                    </div>
+
+                    <!-- Grapper -->
+                    <div class="naro-card p-8 flex flex-col h-full">
+                        <div
+                            class="w-12 h-12 rounded-sm flex items-center justify-center mb-6 text-blue-600"
+                        >
+                            <img
+                                class="logo-for-app"
+                                src="images/grapper-logo-nobg.png"
+                                alt="grapper-logo"
+                            />
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Grapper</h3>
+                        <p class="text-sm mb-8 flex-grow leading-relaxed">
+                            A Centralized Library for all NaroTech's open source
+                            projects.
+                        </p>
+                        <a
+                            href="https://grapper.github.io"
+                            target="_blank"
+                            class="w-full py-2.5 text-center border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-sm hover:border-blue-600 hover:text-blue-600 transition-colors text-sm font-medium"
+                        >
+                            Visit grapper.github.io
+                            <i class="fa fa-arrow-right ml-1 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ABOUT BRAND -->
+            <section
+                id="brand"
+                class="border-t border-gray-100 dark:border-gray-800"
+            >
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                    <div>
+                        <h2
+                            class="text-3xl font-bold mb-8 flex items-center space-x-3 text-main"
+                        >
+                            <span
+                                class="w-1 h-8 bg-blue-600 block rounded-sm"
+                            ></span>
+                            <span>Corporate Profile</span>
+                        </h2>
+                        <div
+                            class="space-y-6 text-base text-secondary leading-relaxed"
+                        >
+                            <p>
+                                NaroTech is an exclusively digital brand
+                                establishing a footprint in the modern web
+                                ecosystem. Founded in
+                                <strong class="text-main">October 2025</strong>
+                                and operating from
+                                <strong class="text-main">India</strong>, we
+                                focus on creating software that simplifies
+                                complex digital workflows.
+                            </p>
+                            <div
+                                class="p-6 bg-subtle-section border-l-[3px] border-blue-600 rounded-sm"
+                            >
+                                <p
+                                    class="font-semibold text-main text-sm uppercase tracking-wide mb-2"
+                                >
+                                    Legal Disclosure
+                                </p>
+                                <p class="text-sm text-secondary italic">
+                                    NaroTech is a digitally existing brand
+                                    entity. It is not a registered corporation
+                                    or tax-paying entity. It does not hold
+                                    physical assets or wealth under its trade
+                                    name.
+                                </p>
+                            </div>
+                            <p>
+                                Our philosophy is rooted in efficiency,
+                                aggressive optimization, and providing
+                                high-value tools without the overhead of
+                                corporate bureaucracy.
+                            </p>
+                        </div>
+
+                        <div class="mt-10 flex space-x-4">
+                            <a
+                                href="https://whatsapp.com/channel/0029Vb7IFu7HwXbKP3roZa0E"
+                                class="w-10 h-10 flex items-center justify-center border border-gray-200 dark:border-gray-700 rounded-sm text-gray-600 hover:text-blue-600 hover:border-blue-600 transition-all"
+                                ><i class="fa-brands fa-whatsapp text-lg"></i
+                            ></a>
+                            <a
+                                href="https://discord.gg/v7YbtTWB34"
+                                class="w-10 h-10 flex items-center justify-center border border-gray-200 dark:border-gray-700 rounded-sm text-gray-600 hover:text-blue-600 hover:border-blue-600 transition-all"
+                                ><i class="fa-brands fa-discord text-lg"></i
+                            ></a>
+                            <a
+                                href="#"
+                                class="w-10 h-10 flex items-center justify-center border border-gray-200 dark:border-gray-700 rounded-sm text-gray-600 hover:text-blue-600 hover:border-blue-600 transition-all"
+                                ><i class="fa-brands fa-telegram text-lg"></i
+                            ></a>
+                        </div>
+                    </div>
+                    <div class="hidden lg:block pt-10">
+                        <div
+                            class="naro-card p-12 text-center border border-gray-100 dark:border-gray-800 rounded-sm relative overflow-hidden group"
+                        >
+                            <div
+                                class="absolute inset-0 bg-blue-600 opacity-0 group-hover:opacity-[0.03] transition-opacity duration-500"
+                            ></div>
+                            <img
+                                src="./icon/narotech-textlogo-bbg.png"
+                                alt="Naro Logo Large"
+                                class="mx-auto w-24 h-24 mb-6 opacity-80 grayscale hover:grayscale-0 transition-all duration-500"
+                            />
+                            <h4
+                                class="font-bold text-lg tracking-widest uppercase text-main"
+                            >
+                                NaroTech
+                            </h4>
+                            <p class="text-xs text-blue-600 mt-2 font-semibold">
+                                ESTABLISHED 2025
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- DEVELOPMENT SECTION -->
+            <section
+                id="development"
+                class="bg-subtle-section rounded-md my-10 mx-6 lg:mx-auto"
+            >
+                <div class="max-w-5xl mx-auto">
+                    <h2 class="text-2xl font-bold mb-10 text-center text-main">
+                        Development Infrastructure
+                    </h2>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <!-- About Developer -->
+                        <div class="space-y-4">
+                            <h3
+                                class="text-lg font-bold flex items-center space-x-2 text-secondary"
+                            >
+                                <i class="fa fa-user-circle text-blue-600"></i>
+                                <span>Lead Developer</span>
+                            </h3>
+                            <div class="naro-card p-6 h-full">
+                                <div
+                                    class="flex items-center space-x-4 mb-6 pb-6 border-b border-gray-100 dark:border-gray-700"
+                                >
+                                    <div
+                                        class="w-14 h-14 bg-gray-100 dark:bg-gray-800 rounded-sm flex items-center justify-center text-blue-600 text-xl font-bold"
+                                    >
+                                        AB
+                                    </div>
+                                    <div>
+                                        <h4
+                                            class="font-bold text-base text-main"
+                                        >
+                                            Azad Bharatiyan
+                                        </h4>
+                                        <p
+                                            class="text-xs uppercase tracking-wide text-subtle mt-1"
+                                        >
+                                            Full Stack Developer • India
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="space-y-3">
+                                    <div
+                                        class="flex justify-between items-center text-sm"
+                                    >
+                                        <span class="text-subtle"
+                                            >Core Dev</span
+                                        >
+                                        <span class="text-main font-medium"
+                                            >100%</span
+                                        >
+                                    </div>
+                                    <div
+                                        class="w-full bg-gray-100 dark:bg-gray-700 h-1.5 rounded-sm"
+                                    >
+                                        <div
+                                            class="bg-blue-600 h-1.5 rounded-sm w-full"
+                                        ></div>
+                                    </div>
+                                    <div
+                                        class="flex justify-between items-center text-sm mt-3"
+                                    >
+                                        <span class="text-subtle"
+                                            >UI/UX Design</span
+                                        >
+                                        <span class="text-main font-medium"
+                                            >100%</span
+                                        >
+                                    </div>
+                                    <div
+                                        class="w-full bg-gray-100 dark:bg-gray-700 h-1.5 rounded-sm"
+                                    >
+                                        <div
+                                            class="bg-blue-600 h-1.5 rounded-sm w-full"
+                                        ></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Development Channel -->
+                        <div class="space-y-4">
+                            <h3
+                                class="text-lg font-bold flex items-center space-x-2 text-secondary"
+                            >
+                                <i class="fa fa-server text-blue-600"></i>
+                                <span>Tech Stack & Ops</span>
+                            </h3>
+                            <div
+                                class="naro-card p-6 h-full text-sm leading-relaxed text-secondary"
+                            >
+                                <p class="mb-4">
+                                    NaroTech is a solo-driven venture.
+                                    <strong>Azad Bharatiyan</strong>
+                                    orchestrates all operations
+                                    independently—from architectural design to
+                                    deployment.
+                                </p>
+                                <p class="mb-5">
+                                    Our CI/CD workflow integrates AI assistance
+                                    (Claude, Cursor, Gemini) with robust
+                                    open-source foundations.
+                                </p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span
+                                        class="border border-blue-200 dark:border-blue-900/50 bg-blue-50 dark:bg-blue-900/20 px-2 py-1 text-xs text-blue-700 dark:text-blue-400 font-semibold uppercase rounded-[2px]"
+                                        >Firebase Spark</span
+                                    >
+                                    <span
+                                        class="border border-blue-200 dark:border-blue-900/50 bg-blue-50 dark:bg-blue-900/20 px-2 py-1 text-xs text-blue-700 dark:text-blue-400 font-semibold uppercase rounded-[2px]"
+                                        >GitHub Pages</span
+                                    >
+                                    <span
+                                        class="border border-blue-200 dark:border-blue-900/50 bg-blue-50 dark:bg-blue-900/20 px-2 py-1 text-xs text-blue-700 dark:text-blue-400 font-semibold uppercase rounded-[2px]"
+                                        >Tailwind</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Financial Transparency -->
+                    <div
+                        class="mt-8 bg-surface p-6 rounded-sm border border-gray-200 dark:border-gray-800 naro-card"
+                    >
+                        <h3
+                            class="text-base font-bold mb-4 flex items-center space-x-2 text-main"
+                        >
+                            <i class="fa fa-coins text-blue-600"></i>
+                            <span>Financial Model</span>
+                        </h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                            <div
+                                class="p-4 bg-subtle-section rounded-sm border border-gray-100 dark:border-gray-800"
+                            >
+                                <p
+                                    class="text-[10px] uppercase text-subtle font-bold mb-1"
+                                >
+                                    Domain Provider
+                                </p>
+                                <p class="font-semibold text-main">Hostinger</p>
+                            </div>
+                            <div
+                                class="p-4 bg-subtle-section rounded-sm border border-gray-100 dark:border-gray-800"
+                            >
+                                <p
+                                    class="text-[10px] uppercase text-subtle font-bold mb-1"
+                                >
+                                    Infrastructure
+                                </p>
+                                <p class="font-semibold text-main">
+                                    Free Tier / Spark
+                                </p>
+                            </div>
+                            <div
+                                class="p-4 bg-subtle-section rounded-sm border border-gray-100 dark:border-gray-800"
+                            >
+                                <p
+                                    class="text-[10px] uppercase text-subtle font-bold mb-1"
+                                >
+                                    Funding Source
+                                </p>
+                                <p class="font-semibold text-main">
+                                    Self-Funded
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTACT / FAQ / T&C -->
+            <section id="contact">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold mb-2 text-main">
+                        Support Center
+                    </h2>
+                    <p class="text-subtle">
+                        Policies, FAQs, and Contact Channels.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <!-- FAQ Accordion -->
+                    <div class="space-y-3">
+                        <h3
+                            class="text-lg font-bold mb-6 text-secondary uppercase tracking-wide text-sm"
+                        >
+                            Common Queries
+                        </h3>
+
+                        <div class="naro-card rounded-sm overflow-hidden">
+                            <button
+                                class="w-full p-4 text-left font-semibold text-main flex justify-between items-center faq-btn text-sm hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
+                            >
+                                <span>Is NaroTech a registered company?</span>
+                                <i
+                                    class="fa fa-chevron-down text-xs text-subtle transition-transform duration-300"
+                                ></i>
+                            </button>
+                            <div
+                                class="px-4 pb-4 text-sm text-secondary hidden faq-content leading-relaxed border-t border-gray-100 dark:border-gray-800 pt-3"
+                            >
+                                No, NaroTech is a digitally existing brand. It
+                                is not registered as a legal entity or a
+                                tax-paying corporation.
+                            </div>
+                        </div>
+
+                        <div class="naro-card rounded-sm overflow-hidden">
+                            <button
+                                class="w-full p-4 text-left font-semibold text-main flex justify-between items-center faq-btn text-sm hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
+                            >
+                                <span>How are NaroTech products funded?</span>
+                                <i
+                                    class="fa fa-chevron-down text-xs text-subtle transition-transform duration-300"
+                                ></i>
+                            </button>
+                            <div
+                                class="px-4 pb-4 text-sm text-secondary hidden faq-content leading-relaxed border-t border-gray-100 dark:border-gray-800 pt-3"
+                            >
+                                All operational costs are covered by the
+                                developer personally. We utilize free-tier
+                                hosting services and strict optimization.
+                            </div>
+                        </div>
+
+                        <div class="naro-card rounded-sm overflow-hidden">
+                            <button
+                                class="w-full p-4 text-left font-semibold text-main flex justify-between items-center faq-btn text-sm hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
+                            >
+                                <span>OS Compatibility?</span>
+                                <i
+                                    class="fa fa-chevron-down text-xs text-subtle transition-transform duration-300"
+                                ></i>
+                            </button>
+                            <div
+                                class="px-4 pb-4 text-sm text-secondary hidden faq-content leading-relaxed border-t border-gray-100 dark:border-gray-800 pt-3"
+                            >
+                                Naroapp is specifically optimized for Windows
+                                workstations. Other OS support is not currently
+                                planned.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Terms & Conditions Summary -->
+                    <div class="space-y-6">
+                        <h3
+                            class="text-lg font-bold mb-6 text-secondary uppercase tracking-wide text-sm"
+                        >
+                            Terms of Service
+                        </h3>
+                        <div
+                            class="p-6 bg-surface rounded-sm border border-gray-200 dark:border-gray-800 text-xs text-secondary leading-relaxed h-[300px] overflow-y-auto shadow-inner naro-card"
+                        >
+                            <p class="font-bold text-main mb-2">
+                                1. Acceptance of Terms
+                            </p>
+                            <p class="mb-4">
+                                By accessing NaroTech products, you agree to be
+                                bound by these terms. Our tools are provided
+                                "as-is" without any warranties.
+                            </p>
+
+                            <p class="font-bold text-main mb-2">
+                                2. Digital Branding
+                            </p>
+                            <p class="mb-4">
+                                Users acknowledge that NaroTech is a
+                                digital-only brand. Liability is limited to
+                                software functionality.
+                            </p>
+
+                            <p class="font-bold text-main mb-2">
+                                3. Data Privacy
+                            </p>
+                            <p class="mb-4">
+                                We do not sell user data. Our tools use Firebase
+                                and GitHub services; review their respective
+                                policies.
+                            </p>
+
+                            <p class="font-bold text-main mb-2">
+                                4. Usage Policy
+                            </p>
+                            <p class="mb-4">
+                                Commercial reproduction of NaroTech code is
+                                prohibited without explicit consent from Azad
+                                Bharatiyan.
+                            </p>
+
+                            <p class="font-bold text-main mb-2">
+                                5. Disclaimer
+                            </p>
+                            <p class="mb-4">
+                                Developer is not responsible for data loss or
+                                hardware issues resulting from software use.
+                            </p>
+
+                            <p class="font-bold text-main mb-2">
+                                6. Jurisdiction
+                            </p>
+                            <p>
+                                These terms are governed by the digital laws
+                                applicable in India.
+                            </p>
+                        </div>
+
+                        <div
+                            class="flex items-center justify-between p-4 bg-blue-50 dark:bg-blue-900/10 border border-blue-100 dark:border-blue-900/30 rounded-sm"
+                        >
+                            <div>
+                                <p class="font-bold text-sm text-main">
+                                    Join Our Commmunity
+                                </p>
+                                <p class="text-xs text-subtle">
+                                    Connect with our developers and learners
+                                </p>
+                            </div>
+                            <a
+                                href="https://rebrand.ly/ntivolunteer"
+                                class="px-5 py-2 bg-blue-600 text-white text-xs font-bold uppercase rounded-[2px] hover:bg-blue-700 transition-colors"
+                                >Join Now</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer
+            class="mt-20 py-16 bg-[#0a0a0a] text-white text-center border-t border-gray-800"
+        >
+            <div class="max-w-7xl mx-auto px-6" style="font-size: 15px">
+                <div class="mb-10">
+                    <div
+                        class="flex items-center justify-center space-x-3 mb-4"
+                    >
+                        <div
+                            class="w-6 h-6 flex items-center justify-center rounded-[1px] text-black font-bold text-xs"
+                        >
+                            <img
+                                src="icon/narotech-textlogo-bbg.png"
+                                class="logo-top-header w-20"
+                                alt="NaroTech logo"
+                            />
+                        </div>
+                        <span class="text-xl custom-font tracking-tight"
+                            >NaroTech</span
+                        >
+                    </div>
+                    <p
+                        style="font-size: 15px"
+                        class="text-gray-500 text-xs max-w-md mx-auto leading-relaxed"
+                    >
+                        High-performance utility engineering. <br />Designed &
+                        Built in India, 2025.
+                    </p>
+                </div>
+
+                <div
+                    class="flex flex-wrap justify-center gap-8 mb-12 text-sm text-gray-400 font-medium"
+                >
+                    <a href="#home" class="hover:text-white transition-colors"
+                        >Home</a
+                    >
+                    <a
+                        href="#products"
+                        class="hover:text-white transition-colors"
+                        >Products</a
+                    >
+                    <a href="#brand" class="hover:text-white transition-colors"
+                        >Brand</a
+                    >
+                    <a
+                        href="#development"
+                        class="hover:text-white transition-colors"
+                        >Dev</a
+                    >
+                </div>
+
+                <div
+                    class="pt-8 border-t border-gray-900 text-gray-600 text-[10px] uppercase tracking-wider flex flex-col md:flex-row justify-between items-center gap-4"
+                >
+                    <p style="font-size: 15px">
+                        © 2025 NaroTech. Maintained by Azad Bharatiyan.
+                    </p>
+                    <div class="flex space-x-6" style="font-size: 15px">
+                        <span class="cursor-pointer hover:text-gray-400"
+                            >Privacy</span
+                        >
+                        <span class="cursor-pointer hover:text-gray-400"
+                            >Terms</span
+                        >
+                        <span class="cursor-pointer hover:text-gray-400"
+                            >Sitemap</span
+                        >
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            // Theme Logic
+            const html = document.documentElement;
+            const themeBtn = document.getElementById("themeToggle");
+            const themeIcon = document.getElementById("themeIcon");
+
+            function initTheme() {
+                const savedTheme = localStorage.getItem("narotech-theme");
+                const systemPrefersDark = window.matchMedia(
+                    "(prefers-color-scheme: dark)",
+                ).matches;
+
+                if (
+                    savedTheme === "dark" ||
+                    (!savedTheme && systemPrefersDark)
+                ) {
+                    setDarkTheme();
+                } else {
+                    setLightTheme();
+                }
+            }
+
+            function setDarkTheme() {
+                html.classList.add("dark");
+                html.classList.remove("light");
+                themeIcon.className = "fa fa-sun";
+                localStorage.setItem("narotech-theme", "dark");
+            }
+
+            function setLightTheme() {
+                html.classList.add("light");
+                html.classList.remove("dark");
+                themeIcon.className = "fa fa-moon";
+                localStorage.setItem("narotech-theme", "light");
+            }
+
+            themeBtn.addEventListener("click", () => {
+                if (html.classList.contains("dark")) {
+                    setLightTheme();
+                } else {
+                    setDarkTheme();
+                }
+            });
+
+            // FAQ Interactivity
+            const faqBtns = document.querySelectorAll(".faq-btn");
+            faqBtns.forEach((btn) => {
+                btn.addEventListener("click", () => {
+                    const content = btn.nextElementSibling;
+                    const icon = btn.querySelector("i");
+                    const isHidden = content.classList.contains("hidden");
+
+                    // Close others
+                    document
+                        .querySelectorAll(".faq-content")
+                        .forEach((c) => c.classList.add("hidden"));
+                    document
+                        .querySelectorAll(".faq-btn i")
+                        .forEach((i) => (i.style.transform = "rotate(0deg)"));
+
+                    if (isHidden) {
+                        content.classList.remove("hidden");
+                        icon.style.transform = "rotate(180deg)";
+                    }
+                });
+            });
+
+            // Scroll Spy
+            window.addEventListener("scroll", () => {
+                const sections = document.querySelectorAll("section");
+                const navLinks = document.querySelectorAll(".mobile-nav a");
+
+                let current = "";
+                sections.forEach((section) => {
+                    const sectionTop = section.offsetTop;
+                    if (pageYOffset >= sectionTop - 200) {
+                        current = section.getAttribute("id");
+                    }
+                });
+
+                navLinks.forEach((link) => {
+                    link.classList.remove("text-blue-600", "opacity-100");
+                    link.classList.add("text-subtle");
+                    if (link.getAttribute("href").includes(current)) {
+                        link.classList.add("text-blue-600");
+                        link.classList.remove("text-subtle");
+                    }
+                });
+            });
+
+            // Intersection Observer for Animation
+            const observerOptions = { threshold: 0.1 };
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("animate-fade");
+                    }
+                });
+            }, observerOptions);
+
+            document
+                .querySelectorAll(".naro-card")
+                .forEach((card) => observer.observe(card));
+
+            window.onload = initTheme;
+        </script>
+    </body>
+</html>
