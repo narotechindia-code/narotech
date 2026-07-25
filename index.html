@@ -220,284 +220,461 @@
                 </div>
             </section>
 
-            <!-- OUR PRODUCTS -->
-            <section id="products" class="bg-subtle-section">
-                <div class="text-center mb-16">
-                    <h2
-                        class="text-3xl font-bold mb-4 flex items-center justify-center space-x-3 text-main"
+            <!-- OUR PRODUCTS / ECOSYSTEM -->
+            <section id="products" class="bg-subtle-section py-20">
+                <!-- Section Header -->
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <span
+                        class="px-3 py-1 bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-400 text-xs font-bold uppercase tracking-widest rounded-[2px] mb-3 inline-block"
                     >
-                        <i class="fa fa-cubes text-blue-600 text-xl"></i>
-                        <span>Our Ecosystem</span>
+                        Enterprise Platform Portfolio
+                    </span>
+                    <h2
+                        class="text-3xl md:text-4xl font-bold mb-4 flex items-center justify-center space-x-3 text-main tracking-tight"
+                    >
+                        <i class="fa fa-cubes text-blue-600 text-2xl"></i>
+                        <span>Our Digital Ecosystem</span>
                     </h2>
-                    <div class="w-12 h-1 bg-blue-600 mx-auto rounded-sm"></div>
+                    <p class="text-sm md:text-base text-secondary font-light leading-relaxed mb-6">
+                        A structured hierarchy of desktop tools, FinTech marketplaces, developer workspaces, career utilities, and public infrastructure built for high performance.
+                    </p>
+                    <div class="w-16 h-1 bg-blue-600 mx-auto rounded-sm"></div>
                 </div>
 
-                <div
-                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-                >
-                    <!-- Naroapp -->
-                    <div class="naro-card p-8 flex flex-col h-full">
-                        <div
-                            class="w-12 h-12 rounded-sm flex items-center justify-center mb-6 text-blue-600"
-                        >
-                            <img
-                                class="logo-for-app"
-                                src="images/naroapp-logo-nobg.png"
-                                alt="grapper-logo"
-                            />
+                <!-- Ecosystem Category Filter Bar -->
+                <div class="flex flex-wrap justify-center gap-2 md:gap-3 mb-12 overflow-x-auto py-2 px-4 max-w-5xl mx-auto">
+                    <button class="ecosystem-tab-btn active" data-filter="all">
+                        <i class="fa fa-layer-group mr-1.5 text-xs"></i> All Platforms (17)
+                    </button>
+                    <button class="ecosystem-tab-btn" data-filter="core">
+                        <i class="fa fa-microchip mr-1.5 text-xs"></i> Core Platforms
+                    </button>
+                    <button class="ecosystem-tab-btn" data-filter="fintech">
+                        <i class="fa fa-chart-line mr-1.5 text-xs"></i> Commerce & FinTech
+                    </button>
+                    <button class="ecosystem-tab-btn" data-filter="developer">
+                        <i class="fa fa-code mr-1.5 text-xs"></i> Dev Workspaces
+                    </button>
+                    <button class="ecosystem-tab-btn" data-filter="education">
+                        <i class="fa fa-graduation-cap mr-1.5 text-xs"></i> Education & Design
+                    </button>
+                    <button class="ecosystem-tab-btn" data-filter="civic">
+                        <i class="fa fa-landmark mr-1.5 text-xs"></i> Civic Infrastructure
+                    </button>
+                </div>
+
+                <!-- HIERARCHY CATEGORY 1: CORE PLATFORMS & DESKTOP SUITE -->
+                <div class="eco-category-group mb-16" data-category-group="core">
+                    <div class="flex items-center justify-between border-b border-gray-200 dark:border-gray-800 pb-3 mb-8">
+                        <div class="flex items-center space-x-3">
+                            <span class="w-2.5 h-6 bg-blue-600 rounded-sm"></span>
+                            <h3 class="text-xl font-bold text-main">Core Platforms & Desktop Suite</h3>
                         </div>
-                        <h3 class="text-xl font-bold mb-2">Naroapp</h3>
-                        <p class="text-sm mb-8 flex-grow leading-relaxed">
-                            The All-in-One Software and Apps Downloader for
-                            Windows. Streamline your workstation setup with a
-                            single unified interface.
-                        </p>
-                        <a
-                            href="https://naroapp.store"
-                            target="_blank"
-                            class="w-full py-2.5 text-center border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-sm hover:border-blue-600 hover:text-blue-600 transition-colors text-sm font-medium"
-                        >
-                            Visit naroapp.store
-                            <i class="fa fa-arrow-right ml-1 text-xs"></i>
-                        </a>
+                        <span class="text-xs font-semibold px-2.5 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-600 rounded-[2px] uppercase">
+                            Flagship Apps
+                        </span>
                     </div>
 
-                    <!-- Nion AI -->
-                    <div class="naro-card p-8 flex flex-col h-full">
-                        <div
-                            class="w-12 h-12 rounded-sm flex items-center justify-center mb-6 text-blue-600"
-                        >
-                            <img
-                                class="logo-for-app"
-                                src="https://nionai.web.app/icon/logo.png"
-                                alt="grapper-logo"
-                            />
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Naroapp -->
+                        <div class="naro-card eco-card p-7 flex flex-col h-full">
+                            <div class="flex items-center justify-between mb-5">
+                                <div class="w-14 h-14 rounded-sm bg-gray-50 dark:bg-gray-800/60 border border-gray-100 dark:border-gray-700/50 p-2 flex items-center justify-center">
+                                    <img class="logo-for-app" src="images/naroapp-logo-nobg.png" alt="Naroapp Logo" />
+                                </div>
+                                <span class="ecosystem-category-badge bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-400 border border-blue-200 dark:border-blue-800/40">
+                                    Desktop App
+                                </span>
+                            </div>
+                            <h4 class="text-xl font-bold mb-2 text-main">Naroapp</h4>
+                            <p class="text-sm text-secondary mb-6 flex-grow leading-relaxed">
+                                The All-in-One Software and Apps Downloader for Windows. Streamline your workstation setup with a single unified interface.
+                            </p>
+                            <a href="https://naroapp.store" target="_blank" class="w-full py-2.5 text-center border border-gray-300 dark:border-gray-700 text-gray-800 dark:text-gray-200 rounded-sm hover:border-blue-600 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-sm font-semibold flex items-center justify-center space-x-2">
+                                <span>Visit naroapp.store</span>
+                                <i class="fa fa-external-link-alt text-xs"></i>
+                            </a>
                         </div>
-                        <h3 class="text-xl font-bold mb-2">Nion AI</h3>
-                        <p class="text-sm mb-8 flex-grow leading-relaxed">
-                            The Ultimate AI Companion for Academic and
-                            Professional works. Advanced reasoning and
-                            processing at your fingertips.
-                        </p>
-                        <a
-                            href="https://nionai.web.app"
-                            target="_blank"
-                            class="w-full py-2.5 text-center border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-sm hover:border-blue-600 hover:text-blue-600 transition-colors text-sm font-medium"
-                        >
-                            Visit nionai.web.app
-                            <i class="fa fa-arrow-right ml-1 text-xs"></i>
-                        </a>
+
+                        <!-- Nion AI -->
+                        <div class="naro-card eco-card p-7 flex flex-col h-full">
+                            <div class="flex items-center justify-between mb-5">
+                                <div class="w-14 h-14 rounded-sm bg-gray-50 dark:bg-gray-800/60 border border-gray-100 dark:border-gray-700/50 p-2 flex items-center justify-center">
+                                    <img class="logo-for-app" src="images/nionai-logo-nobg.png" alt="Nion AI Logo" onerror="this.onerror=null; this.src='https://nionai.web.app/icon/logo.png';" />
+                                </div>
+                                <span class="ecosystem-category-badge bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-400 border border-indigo-200 dark:border-indigo-800/40">
+                                    AI Engine
+                                </span>
+                            </div>
+                            <h4 class="text-xl font-bold mb-2 text-main">Nion AI</h4>
+                            <p class="text-sm text-secondary mb-6 flex-grow leading-relaxed">
+                                The Ultimate AI Companion for Academic and Professional works. Advanced reasoning and processing at your fingertips.
+                            </p>
+                            <a href="https://nionai.web.app" target="_blank" class="w-full py-2.5 text-center border border-gray-300 dark:border-gray-700 text-gray-800 dark:text-gray-200 rounded-sm hover:border-blue-600 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-sm font-semibold flex items-center justify-center space-x-2">
+                                <span>Visit nionai.web.app</span>
+                                <i class="fa fa-external-link-alt text-xs"></i>
+                            </a>
+                        </div>
+
+                        <!-- Bitflie -->
+                        <div class="naro-card eco-card p-7 flex flex-col h-full">
+                            <div class="flex items-center justify-between mb-5">
+                                <div class="w-14 h-14 rounded-sm bg-gray-50 dark:bg-gray-800/60 border border-gray-100 dark:border-gray-700/50 p-2 flex items-center justify-center">
+                                    <img class="logo-for-app" src="images/bitfiles-logo-nobg.png" alt="Bitflie Logo" />
+                                </div>
+                                <span class="ecosystem-category-badge bg-sky-50 dark:bg-sky-950/60 text-sky-700 dark:text-sky-400 border border-sky-200 dark:border-sky-800/40">
+                                    P2P Sharing
+                                </span>
+                            </div>
+                            <h4 class="text-xl font-bold mb-2 text-main">Bitflie</h4>
+                            <p class="text-sm text-secondary mb-6 flex-grow leading-relaxed">
+                                Lightning-fast file sharing within local networks. Secure, private, and optimized for high-bandwidth transfers.
+                            </p>
+                            <a href="https://bitflie.web.app" target="_blank" class="w-full py-2.5 text-center border border-gray-300 dark:border-gray-700 text-gray-800 dark:text-gray-200 rounded-sm hover:border-blue-600 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-sm font-semibold flex items-center justify-center space-x-2">
+                                <span>Visit bitflie.web.app</span>
+                                <i class="fa fa-external-link-alt text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HIERARCHY CATEGORY 2: COMMERCE & FINTECH MARKETPLACES -->
+                <div class="eco-category-group mb-16" data-category-group="fintech">
+                    <div class="flex items-center justify-between border-b border-gray-200 dark:border-gray-800 pb-3 mb-8">
+                        <div class="flex items-center space-x-3">
+                            <span class="w-2.5 h-6 bg-emerald-600 rounded-sm"></span>
+                            <h3 class="text-xl font-bold text-main">Commerce & FinTech Marketplaces</h3>
+                        </div>
+                        <span class="text-xs font-semibold px-2.5 py-1 bg-emerald-50 dark:bg-emerald-900/30 text-emerald-600 rounded-[2px] uppercase">
+                            Finance & Commerce
+                        </span>
                     </div>
 
-                    <!-- Bitfile -->
-                    <div class="naro-card p-8 flex flex-col h-full">
-                        <div
-                            class="w-12 h-12 rounded-sm flex items-center justify-center mb-6 text-blue-600"
-                        >
-                            <img
-                                class="logo-for-app"
-                                src="images/bitfiles-logo-nobg.png"
-                                alt="grapper-logo"
-                            />
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Taxiny -->
+                        <div class="naro-card eco-card p-7 flex flex-col h-full">
+                            <div class="flex items-center justify-between mb-5">
+                                <div class="w-14 h-14 rounded-sm bg-gray-50 dark:bg-gray-800/60 border border-gray-100 dark:border-gray-700/50 p-1.5 flex items-center justify-center">
+                                    <img class="logo-for-app" src="images/Taxiny-logo-Rectangle.jpg" alt="Taxiny Logo" />
+                                </div>
+                                <span class="ecosystem-category-badge bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-800/40">
+                                    FinTech Marketplace
+                                </span>
+                            </div>
+                            <h4 class="text-xl font-bold mb-2 text-main">Taxiny</h4>
+                            <p class="text-sm text-secondary mb-6 flex-grow leading-relaxed">
+                                We are building India's premier tax marketplace. Place your filing orders on Taxiny, and we route them directly to certified GST practitioners who execute reconciliations and submit returns. Submit your email to join the launch queue.
+                            </p>
+                            <a href="https://tax-iny.web.app/" target="_blank" class="w-full py-2.5 text-center border border-gray-300 dark:border-gray-700 text-gray-800 dark:text-gray-200 rounded-sm hover:border-blue-600 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-sm font-semibold flex items-center justify-center space-x-2">
+                                <span>Visit tax-iny.web.app</span>
+                                <i class="fa fa-external-link-alt text-xs"></i>
+                            </a>
                         </div>
-                        <h3 class="text-xl font-bold mb-2">Bitflie</h3>
-                        <p class="text-sm mb-8 flex-grow leading-relaxed">
-                            Lightning-fast file sharing within local networks.
-                            Secure, private, and optimized for high-bandwidth
-                            transfers.
-                        </p>
-                        <a
-                            href="https://bitflie.web.app"
-                            target="_blank"
-                            class="w-full py-2.5 text-center border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-sm hover:border-blue-600 hover:text-blue-600 transition-colors text-sm font-medium"
-                        >
-                            Visit bitflie.web.app
-                            <i class="fa fa-arrow-right ml-1 text-xs"></i>
-                        </a>
+
+                        <!-- buyigo -->
+                        <div class="naro-card eco-card p-7 flex flex-col h-full">
+                            <div class="flex items-center justify-between mb-5">
+                                <div class="w-14 h-14 rounded-sm bg-gray-50 dark:bg-gray-800/60 border border-gray-100 dark:border-gray-700/50 p-2 flex items-center justify-center">
+                                    <img class="logo-for-app" src="images/Buyigo-logo.png" alt="buyigo Logo" />
+                                </div>
+                                <span class="ecosystem-category-badge bg-orange-50 dark:bg-orange-950/60 text-orange-700 dark:text-orange-400 border border-orange-200 dark:border-orange-800/40">
+                                    E-Commerce
+                                </span>
+                            </div>
+                            <h4 class="text-xl font-bold mb-2 text-main">buyigo</h4>
+                            <p class="text-sm text-secondary mb-6 flex-grow leading-relaxed">
+                                An All-In-One E-Commerce Marketplace platform engineered for seamless digital trading and local commerce.
+                            </p>
+                            <a href="https://buyigo.web.app" target="_blank" class="w-full py-2.5 text-center border border-gray-300 dark:border-gray-700 text-gray-800 dark:text-gray-200 rounded-sm hover:border-blue-600 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-sm font-semibold flex items-center justify-center space-x-2">
+                                <span>Visit buyigo.web.app</span>
+                                <i class="fa fa-external-link-alt text-xs"></i>
+                            </a>
+                        </div>
+
+                        <!-- Ticcetnet -->
+                        <div class="naro-card eco-card p-7 flex flex-col h-full">
+                            <div class="flex items-center justify-between mb-5">
+                                <div class="w-14 h-14 rounded-sm bg-gray-50 dark:bg-gray-800/60 border border-gray-100 dark:border-gray-700/50 p-2 flex items-center justify-center">
+                                    <img class="logo-for-app" src="images/Ticcetnet-logo.png" alt="Ticcetnet Logo" />
+                                </div>
+                                <span class="ecosystem-category-badge bg-purple-50 dark:bg-purple-950/60 text-purple-700 dark:text-purple-400 border border-purple-200 dark:border-purple-800/40">
+                                    Digital Ticketing
+                                </span>
+                            </div>
+                            <h4 class="text-xl font-bold mb-2 text-main">Ticcetnet</h4>
+                            <p class="text-sm text-secondary mb-6 flex-grow leading-relaxed">
+                                Narotech India passenger digital ticket booking & boarding ledger engine designed for high-capacity passenger services.
+                            </p>
+                            <a href="https://ticketnet.web.app" target="_blank" class="w-full py-2.5 text-center border border-gray-300 dark:border-gray-700 text-gray-800 dark:text-gray-200 rounded-sm hover:border-blue-600 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-sm font-semibold flex items-center justify-center space-x-2">
+                                <span>Visit ticketnet.web.app</span>
+                                <i class="fa fa-external-link-alt text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HIERARCHY CATEGORY 3: DEVELOPER & CREATOR WORKSPACES -->
+                <div class="eco-category-group mb-16" data-category-group="developer">
+                    <div class="flex items-center justify-between border-b border-gray-200 dark:border-gray-800 pb-3 mb-8">
+                        <div class="flex items-center space-x-3">
+                            <span class="w-2.5 h-6 bg-violet-600 rounded-sm"></span>
+                            <h3 class="text-xl font-bold text-main">Developer & Creator Workspaces</h3>
+                        </div>
+                        <span class="text-xs font-semibold px-2.5 py-1 bg-violet-50 dark:bg-violet-900/30 text-violet-600 rounded-[2px] uppercase">
+                            Dev Tools
+                        </span>
                     </div>
 
-                    <!-- Directli -->
-                    <div class="naro-card p-8 flex flex-col h-full">
-                        <div
-                            class="w-12 h-12 rounded-sm flex items-center justify-center mb-6 text-blue-600"
-                        >
-                            <img
-                                class="logo-for-app"
-                                src="images/directli-logo-nobg.png"
-                                alt="grapper-logo"
-                            />
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- DevXNeo -->
+                        <div class="naro-card eco-card p-7 flex flex-col h-full">
+                            <div class="flex items-center justify-between mb-5">
+                                <div class="w-14 h-14 rounded-sm bg-gray-50 dark:bg-gray-800/60 border border-gray-100 dark:border-gray-700/50 p-2 flex items-center justify-center">
+                                    <img class="logo-for-app" src="images/Devxneo-logo.png" alt="DevXNeo Logo" />
+                                </div>
+                                <span class="ecosystem-category-badge bg-violet-50 dark:bg-violet-950/60 text-violet-700 dark:text-violet-400 border border-violet-200 dark:border-violet-800/40">
+                                    Creator Hub
+                                </span>
+                            </div>
+                            <h4 class="text-xl font-bold mb-2 text-main">DevXNeo</h4>
+                            <p class="text-sm text-secondary mb-6 flex-grow leading-relaxed">
+                                An ultimate consolidated workspace curated for creators, developers, and designers. Explore premium asset packs, web utilities, and real-time utilities completely free of cost.
+                            </p>
+                            <a href="https://devxneo.web.app/" target="_blank" class="w-full py-2.5 text-center border border-gray-300 dark:border-gray-700 text-gray-800 dark:text-gray-200 rounded-sm hover:border-blue-600 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-sm font-semibold flex items-center justify-center space-x-2">
+                                <span>Visit devxneo.web.app</span>
+                                <i class="fa fa-external-link-alt text-xs"></i>
+                            </a>
                         </div>
-                        <h3 class="text-xl font-bold mb-2">Directli</h3>
-                        <p class="text-sm mb-8 flex-grow leading-relaxed">
-                            Efficient link converter for Google Drive and naro
-                            Drive. Generate direct download links instantly.
-                        </p>
-                        <a
-                            href="https://directli.web.app"
-                            target="_blank"
-                            class="w-full py-2.5 text-center border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-sm hover:border-blue-600 hover:text-blue-600 transition-colors text-sm font-medium"
-                        >
-                            Visit directli.web.app
-                            <i class="fa fa-arrow-right ml-1 text-xs"></i>
-                        </a>
+
+                        <!-- Grapper Codes -->
+                        <div class="naro-card eco-card p-7 flex flex-col h-full">
+                            <div class="flex items-center justify-between mb-5">
+                                <div class="w-14 h-14 rounded-sm bg-gray-50 dark:bg-gray-800/60 border border-gray-100 dark:border-gray-700/50 p-2 flex items-center justify-center">
+                                    <img class="logo-for-app" src="images/grapper-logo-nobg.png" alt="Grapper Codes Logo" />
+                                </div>
+                                <span class="ecosystem-category-badge bg-cyan-50 dark:bg-cyan-950/60 text-cyan-700 dark:text-cyan-400 border border-cyan-200 dark:border-cyan-800/40">
+                                    Code Hub
+                                </span>
+                            </div>
+                            <h4 class="text-xl font-bold mb-2 text-main">Grapper Codes</h4>
+                            <p class="text-sm text-secondary mb-6 flex-grow leading-relaxed">
+                                A Centralized Code Library and Developer Resource Ecosystem for NaroTech's open-source projects, developer tools, and reusable modules.
+                            </p>
+                            <a href="https://grappercodes.web.app/" target="_blank" class="w-full py-2.5 text-center border border-gray-300 dark:border-gray-700 text-gray-800 dark:text-gray-200 rounded-sm hover:border-blue-600 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-sm font-semibold flex items-center justify-center space-x-2">
+                                <span>Visit grappercodes.web.app</span>
+                                <i class="fa fa-external-link-alt text-xs"></i>
+                            </a>
+                        </div>
+
+                        <!-- Webhub -->
+                        <div class="naro-card eco-card p-7 flex flex-col h-full">
+                            <div class="flex items-center justify-between mb-5">
+                                <div class="w-14 h-14 rounded-sm bg-gray-50 dark:bg-gray-800/60 border border-gray-100 dark:border-gray-700/50 p-2 flex items-center justify-center">
+                                    <img class="logo-for-app" src="images/Webhub-logo.png" alt="Webhub Logo" />
+                                </div>
+                                <span class="ecosystem-category-badge bg-teal-50 dark:bg-teal-950/60 text-teal-700 dark:text-teal-400 border border-teal-200 dark:border-teal-800/40">
+                                    Shortcut Engine
+                                </span>
+                            </div>
+                            <h4 class="text-xl font-bold mb-2 text-main">Webhub</h4>
+                            <p class="text-sm text-secondary mb-6 flex-grow leading-relaxed">
+                                An All-In-One Link Shortcut Generator Page. Streamline productivity and bookmark management with lightning-fast generator tools.
+                            </p>
+                            <a href="https://narotechindia-code.github.io/webhub/" target="_blank" class="w-full py-2.5 text-center border border-gray-300 dark:border-gray-700 text-gray-800 dark:text-gray-200 rounded-sm hover:border-blue-600 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-sm font-semibold flex items-center justify-center space-x-2">
+                                <span>Visit Webhub Portal</span>
+                                <i class="fa fa-external-link-alt text-xs"></i>
+                            </a>
+                        </div>
+
+                        <!-- Directli -->
+                        <div class="naro-card eco-card p-7 flex flex-col h-full">
+                            <div class="flex items-center justify-between mb-5">
+                                <div class="w-14 h-14 rounded-sm bg-gray-50 dark:bg-gray-800/60 border border-gray-100 dark:border-gray-700/50 p-2 flex items-center justify-center">
+                                    <img class="logo-for-app" src="images/directli-logo-nobg.png" alt="Directli Logo" />
+                                </div>
+                                <span class="ecosystem-category-badge bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-400 border border-blue-200 dark:border-blue-800/40">
+                                    Link Utility
+                                </span>
+                            </div>
+                            <h4 class="text-xl font-bold mb-2 text-main">Directli</h4>
+                            <p class="text-sm text-secondary mb-6 flex-grow leading-relaxed">
+                                Efficient link converter for Google Drive and Naro Drive. Generate direct download links instantly.
+                            </p>
+                            <a href="https://directli.web.app" target="_blank" class="w-full py-2.5 text-center border border-gray-300 dark:border-gray-700 text-gray-800 dark:text-gray-200 rounded-sm hover:border-blue-600 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-sm font-semibold flex items-center justify-center space-x-2">
+                                <span>Visit directli.web.app</span>
+                                <i class="fa fa-external-link-alt text-xs"></i>
+                            </a>
+                        </div>
+
+                        <!-- Weegen -->
+                        <div class="naro-card eco-card p-7 flex flex-col h-full">
+                            <div class="flex items-center justify-between mb-5">
+                                <div class="w-14 h-14 rounded-sm bg-gray-50 dark:bg-gray-800/60 border border-gray-100 dark:border-gray-700/50 p-2 flex items-center justify-center">
+                                    <img class="logo-for-app" src="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%234f46e5%22/><path d=%22M30 30 L50 70 L70 30%22 stroke=%22white%22 stroke-width=%228%22 fill=%22none%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/></svg>" alt="Weegen Logo" />
+                                </div>
+                                <span class="ecosystem-category-badge bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-400 border border-indigo-200 dark:border-indigo-800/40">
+                                    HTML Generator
+                                </span>
+                            </div>
+                            <h4 class="text-xl font-bold mb-2 text-main">Weegen</h4>
+                            <p class="text-sm text-secondary mb-6 flex-grow leading-relaxed">
+                                Weegen is a utility for all-in-one HTML shortcut generation with advanced features and enhanced support.
+                            </p>
+                            <a href="https://weegen.netlify.app" target="_blank" class="w-full py-2.5 text-center border border-gray-300 dark:border-gray-700 text-gray-800 dark:text-gray-200 rounded-sm hover:border-blue-600 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-sm font-semibold flex items-center justify-center space-x-2">
+                                <span>Visit weegen.netlify.app</span>
+                                <i class="fa fa-external-link-alt text-xs"></i>
+                            </a>
+                        </div>
+
+                        <!-- Hypertarks -->
+                        <div class="naro-card eco-card p-7 flex flex-col h-full">
+                            <div class="flex items-center justify-between mb-5">
+                                <div class="w-14 h-14 rounded-sm bg-gray-50 dark:bg-gray-800/60 border border-gray-100 dark:border-gray-700/50 p-2 flex items-center justify-center">
+                                    <img class="logo-for-app" src="https://hypertarks.netlify.app/favicon.svg" alt="Hypertarks Logo" />
+                                </div>
+                                <span class="ecosystem-category-badge bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-800/40">
+                                    Syntax Guide
+                                </span>
+                            </div>
+                            <h4 class="text-xl font-bold mb-2 text-main">Hypertarks</h4>
+                            <p class="text-sm text-secondary mb-6 flex-grow leading-relaxed">
+                                Hypertarks is your comprehensive guide to HTML, CSS, JavaScript, JSON, XML, and Python. Search, copy, and learn syntax for modern web development.
+                            </p>
+                            <a href="https://hypertarks.netlify.app" target="_blank" class="w-full py-2.5 text-center border border-gray-300 dark:border-gray-700 text-gray-800 dark:text-gray-200 rounded-sm hover:border-blue-600 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-sm font-semibold flex items-center justify-center space-x-2">
+                                <span>Visit hypertarks.netlify.app</span>
+                                <i class="fa fa-external-link-alt text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HIERARCHY CATEGORY 4: EDUCATION, CAREER & DESIGN UTILITIES -->
+                <div class="eco-category-group mb-16" data-category-group="education">
+                    <div class="flex items-center justify-between border-b border-gray-200 dark:border-gray-800 pb-3 mb-8">
+                        <div class="flex items-center space-x-3">
+                            <span class="w-2.5 h-6 bg-amber-600 rounded-sm"></span>
+                            <h3 class="text-xl font-bold text-main">Education, Career & Visual Tools</h3>
+                        </div>
+                        <span class="text-xs font-semibold px-2.5 py-1 bg-amber-50 dark:bg-amber-900/30 text-amber-600 rounded-[2px] uppercase">
+                            Education & Design
+                        </span>
                     </div>
 
-                    <!-- Reszumes -->
-                    <div class="naro-card p-8 flex flex-col h-full">
-                        <div
-                            class="w-12 h-12 rounded-sm flex items-center justify-center mb-6 text-blue-600"
-                        >
-                            <img
-                                class="logo-for-app"
-                                src="images/reszumes-logo-nobg.png"
-                                alt="grapper-logo"
-                            />
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Beyboard -->
+                        <div class="naro-card eco-card p-7 flex flex-col h-full">
+                            <div class="flex items-center justify-between mb-5">
+                                <div class="w-14 h-14 rounded-sm bg-gray-50 dark:bg-gray-800/60 border border-gray-100 dark:border-gray-700/50 p-2 flex items-center justify-center">
+                                    <img class="logo-for-app" src="images/Beyboard-logo.png" alt="Beyboard Logo" />
+                                </div>
+                                <span class="ecosystem-category-badge bg-amber-50 dark:bg-amber-950/60 text-amber-700 dark:text-amber-400 border border-amber-200 dark:border-amber-800/40">
+                                    Academic Portal
+                                </span>
+                            </div>
+                            <h4 class="text-xl font-bold mb-2 text-main">Beyboard</h4>
+                            <p class="text-sm text-secondary mb-6 flex-grow leading-relaxed">
+                                Your professional dashboard for student management, learning resources, and real-time updates.
+                            </p>
+                            <a href="https://beyboard.vercel.app/#index" target="_blank" class="w-full py-2.5 text-center border border-gray-300 dark:border-gray-700 text-gray-800 dark:text-gray-200 rounded-sm hover:border-blue-600 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-sm font-semibold flex items-center justify-center space-x-2">
+                                <span>Visit beyboard.vercel.app</span>
+                                <i class="fa fa-external-link-alt text-xs"></i>
+                            </a>
                         </div>
-                        <h3 class="text-xl font-bold mb-2">Reszumes</h3>
-                        <p class="text-sm mb-8 flex-grow leading-relaxed">
-                            Unified resume creator for professionals. Build
-                            clean, ATS-friendly resumes in minutes with smart
-                            templates.
-                        </p>
-                        <a
-                            href="https://reszumes.web.app"
-                            target="_blank"
-                            class="w-full py-2.5 text-center border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-sm hover:border-blue-600 hover:text-blue-600 transition-colors text-sm font-medium"
-                        >
-                            Visit reszumes.web.app
-                            <i class="fa fa-arrow-right ml-1 text-xs"></i>
-                        </a>
+
+                        <!-- Qravis -->
+                        <div class="naro-card eco-card p-7 flex flex-col h-full">
+                            <div class="flex items-center justify-between mb-5">
+                                <div class="w-14 h-14 rounded-sm bg-gray-50 dark:bg-gray-800/60 border border-gray-100 dark:border-gray-700/50 p-1.5 flex items-center justify-center">
+                                    <img class="logo-for-app" src="images/Qravis-logo.jpg" alt="Qravis Logo" />
+                                </div>
+                                <span class="ecosystem-category-badge bg-rose-50 dark:bg-rose-950/60 text-rose-700 dark:text-rose-400 border border-rose-200 dark:border-rose-800/40">
+                                    Visual Design
+                                </span>
+                            </div>
+                            <h4 class="text-xl font-bold mb-2 text-main">Qravis</h4>
+                            <p class="text-sm text-secondary mb-6 flex-grow leading-relaxed">
+                                Transforming ideas into glossy, impactful visuals. I craft presentations, cards, and digital content that leaves a lasting mark.
+                            </p>
+                            <a href="https://qravisdesign.web.app/" target="_blank" class="w-full py-2.5 text-center border border-gray-300 dark:border-gray-700 text-gray-800 dark:text-gray-200 rounded-sm hover:border-blue-600 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-sm font-semibold flex items-center justify-center space-x-2">
+                                <span>Visit qravisdesign.web.app</span>
+                                <i class="fa fa-external-link-alt text-xs"></i>
+                            </a>
+                        </div>
+
+                        <!-- Reszumes -->
+                        <div class="naro-card eco-card p-7 flex flex-col h-full">
+                            <div class="flex items-center justify-between mb-5">
+                                <div class="w-14 h-14 rounded-sm bg-gray-50 dark:bg-gray-800/60 border border-gray-100 dark:border-gray-700/50 p-2 flex items-center justify-center">
+                                    <img class="logo-for-app" src="images/reszumes-logo-nobg.png" alt="Reszumes Logo" />
+                                </div>
+                                <span class="ecosystem-category-badge bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-400 border border-indigo-200 dark:border-indigo-800/40">
+                                    Resume Builder
+                                </span>
+                            </div>
+                            <h4 class="text-xl font-bold mb-2 text-main">Reszumes</h4>
+                            <p class="text-sm text-secondary mb-6 flex-grow leading-relaxed">
+                                Unified resume creator for professionals. Build clean, ATS-friendly resumes in minutes with smart templates.
+                            </p>
+                            <a href="https://reszumes.web.app" target="_blank" class="w-full py-2.5 text-center border border-gray-300 dark:border-gray-700 text-gray-800 dark:text-gray-200 rounded-sm hover:border-blue-600 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-sm font-semibold flex items-center justify-center space-x-2">
+                                <span>Visit reszumes.web.app</span>
+                                <i class="fa fa-external-link-alt text-xs"></i>
+                            </a>
+                        </div>
+
+                        <!-- Indiepro - SAP SD -->
+                        <div class="naro-card eco-card p-7 flex flex-col h-full">
+                            <div class="flex items-center justify-between mb-5">
+                                <div class="w-14 h-14 rounded-sm bg-gray-50 dark:bg-gray-800/60 border border-gray-100 dark:border-gray-700/50 p-2 flex items-center justify-center">
+                                    <img class="logo-for-app" src="data:image/svg+xml;utf8,%3Csvg width='500' height='500' viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 80 L100 40 L180 80 L100 120 Z' fill='%232C3E50' stroke='%23000' stroke-width='2'/%3E%3Cpath d='M60 100 V130 C60 145 140 145 140 130 V100' fill='%2334495E' stroke='%23000' stroke-width='2'/%3E%3Cpath d='M180 80 L180 130' stroke='%23F1C40F' stroke-width='4' stroke-linecap='round'/%3E%3Ccircle cx='180' cy='135' r='6' fill='%23F1C40F'/%3E%3C/svg%3E" alt="Indiepro Logo" />
+                                </div>
+                                <span class="ecosystem-category-badge bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-400 border border-blue-200 dark:border-blue-800/40">
+                                    Enterprise SAP
+                                </span>
+                            </div>
+                            <h4 class="text-xl font-bold mb-2 text-main">Indiepro - SAP SD</h4>
+                            <p class="text-sm text-secondary mb-6 flex-grow leading-relaxed">
+                                Prepare for Certification and Job Interviews. Contains detailed configuration steps, 100+ Transaction Codes, 50+ Database Tables, and deep-dive Pricing logic.
+                            </p>
+                            <a href="https://indiepro.netlify.app/" target="_blank" class="w-full py-2.5 text-center border border-gray-300 dark:border-gray-700 text-gray-800 dark:text-gray-200 rounded-sm hover:border-blue-600 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-sm font-semibold flex items-center justify-center space-x-2">
+                                <span>Visit indiepro.netlify.app</span>
+                                <i class="fa fa-external-link-alt text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HIERARCHY CATEGORY 5: CIVIC & PUBLIC INFRASTRUCTURE -->
+                <div class="eco-category-group" data-category-group="civic">
+                    <div class="flex items-center justify-between border-b border-gray-200 dark:border-gray-800 pb-3 mb-8">
+                        <div class="flex items-center space-x-3">
+                            <span class="w-2.5 h-6 bg-red-600 rounded-sm"></span>
+                            <h3 class="text-xl font-bold text-main">Civic & Public Infrastructure</h3>
+                        </div>
+                        <span class="text-xs font-semibold px-2.5 py-1 bg-red-50 dark:bg-red-900/30 text-red-600 rounded-[2px] uppercase">
+                            Govt Gateway
+                        </span>
                     </div>
 
-                    <!-- Grapper -->
-                    <div class="naro-card p-8 flex flex-col h-full">
-                        <div
-                            class="w-12 h-12 rounded-sm flex items-center justify-center mb-6 text-blue-600"
-                        >
-                            <img
-                                class="logo-for-app"
-                                src="images/grapper-logo-nobg.png"
-                                alt="grapper-logo"
-                            />
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- CivicKendra (Replaces OurBharat) -->
+                        <div class="naro-card eco-card p-7 flex flex-col h-full">
+                            <div class="flex items-center justify-between mb-5">
+                                <div class="w-14 h-14 rounded-sm bg-gray-50 dark:bg-gray-800/60 border border-gray-100 dark:border-gray-700/50 p-2 flex items-center justify-center">
+                                    <img class="logo-for-app" src="https://ourbharat.online/logo/logo.png" alt="CivicKendra Logo" />
+                                </div>
+                                <span class="ecosystem-category-badge bg-red-50 dark:bg-red-950/60 text-red-700 dark:text-red-400 border border-red-200 dark:border-red-800/40">
+                                    Civic Infrastructure
+                                </span>
+                            </div>
+                            <h4 class="text-xl font-bold mb-2 text-main">CivicKendra</h4>
+                            <p class="text-sm text-secondary mb-6 flex-grow leading-relaxed">
+                                Access official Government NIC district portals across key states, manage workspace bookmarks, and launch direct utility channels in one single ecosystem.
+                            </p>
+                            <a href="https://civickendra.web.app/" target="_blank" class="w-full py-2.5 text-center border border-gray-300 dark:border-gray-700 text-gray-800 dark:text-gray-200 rounded-sm hover:border-blue-600 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-sm font-semibold flex items-center justify-center space-x-2">
+                                <span>Visit civickendra.web.app</span>
+                                <i class="fa fa-external-link-alt text-xs"></i>
+                            </a>
                         </div>
-                        <h3 class="text-xl font-bold mb-2">Grapper</h3>
-                        <p class="text-sm mb-8 flex-grow leading-relaxed">
-                            A Centralized Library for all NaroTech's open source
-                            projects.
-                        </p>
-                        <a
-                            href="https://grapper.github.io"
-                            target="_blank"
-                            class="w-full py-2.5 text-center border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-sm hover:border-blue-600 hover:text-blue-600 transition-colors text-sm font-medium"
-                        >
-                            Visit grapper.github.io
-                            <i class="fa fa-arrow-right ml-1 text-xs"></i>
-                        </a>
-                    </div>
-                    <div class="naro-card p-8 flex flex-col h-full">
-                        <div
-                            class="w-12 h-12 rounded-sm flex items-center justify-center mb-6 text-blue-600"
-                        >
-                            <img
-                                class="logo-for-app"
-                                src="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%234f46e5%22/><path d=%22M30 30 L50 70 L70 30%22 stroke=%22white%22 stroke-width=%228%22 fill=%22none%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/></svg>"
-                                alt="weegen-logo"
-                            />
-                        </div>
-                        <h3 class="text-xl font-bold mb-2">Weegen</h3>
-                        <p class="text-sm mb-8 flex-grow leading-relaxed">
-                            Weegen is an utility for the all in HTML Shortcut
-                            generater, with the advanced and enhanced features
-                            and support.
-                        </p>
-                        <a
-                            href="https://weegen.netlify.app"
-                            target="_blank"
-                            class="w-full py-2.5 text-center border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-sm hover:border-blue-600 hover:text-blue-600 transition-colors text-sm font-medium"
-                        >
-                            Visit weegen.netlify.app
-                            <i class="fa fa-arrow-right ml-1 text-xs"></i>
-                        </a>
-                    </div>
-                    <div class="naro-card p-8 flex flex-col h-full">
-                        <div
-                            class="w-12 h-12 rounded-sm flex items-center justify-center mb-6 text-blue-600"
-                        >
-                            <img
-                                class="logo-for-app"
-                                src="data:image/svg+xml;utf8,%3Csvg width='500' height='500' viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 80 L100 40 L180 80 L100 120 Z' fill='%232C3E50' stroke='%23000' stroke-width='2'/%3E%3Cpath d='M60 100 V130 C60 145 140 145 140 130 V100' fill='%2334495E' stroke='%23000' stroke-width='2'/%3E%3Cpath d='M180 80 L180 130' stroke='%23F1C40F' stroke-width='4' stroke-linecap='round'/%3E%3Ccircle cx='180' cy='135' r='6' fill='%23F1C40F'/%3E%3C/svg%3E"
-                                alt="Graduation Logo"
-                            />
-                        </div>
-                        <h3 class="text-xl font-bold mb-2">
-                            Indiepro - SAP SD
-                        </h3>
-                        <p class="text-sm mb-8 flex-grow leading-relaxed">
-                            Prepare for your Certification and Job Interviews.
-                            This page contains detailed configuration steps,
-                            100+ Transaction Codes, 50+ Database Tables, and
-                            deep-dive explanations of logic like Pricing and
-                            Determinations.
-                        </p>
-                        <a
-                            href="https://indiepro.netlify.app/"
-                            target="_blank"
-                            class="w-full py-2.5 text-center border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-sm hover:border-blue-600 hover:text-blue-600 transition-colors text-sm font-medium"
-                        >
-                            Visit indiepro.netlify.app
-                            <i class="fa fa-arrow-right ml-1 text-xs"></i>
-                        </a>
-                    </div>
-                    <div class="naro-card p-8 flex flex-col h-full">
-                        <div
-                            class="w-12 h-12 rounded-sm flex items-center justify-center mb-6 text-blue-600"
-                        >
-                            <img
-                                class="logo-for-app"
-                                src="https://hypertarks.netlify.app/favicon.svg"
-                                alt="Graduation Logo"
-                            />
-                        </div>
-                        <h3 class="text-xl font-bold mb-2">Hypertarks</h3>
-                        <p class="text-sm mb-8 flex-grow leading-relaxed">
-                            Hypertarks is your comprehensive guide to HTML, CSS,
-                            JavaScript, JSON, XML, and Python. Search, copy, and
-                            learn every command and syntax you need for modern
-                            web development.
-                        </p>
-                        <a
-                            href="https://hypertarks.netlify.app"
-                            target="_blank"
-                            class="w-full py-2.5 text-center border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-sm hover:border-blue-600 hover:text-blue-600 transition-colors text-sm font-medium"
-                        >
-                            Visit hypertarks.netlify.app
-                            <i class="fa fa-arrow-right ml-1 text-xs"></i>
-                        </a>
-                    </div>
-                    <div class="naro-card p-8 flex flex-col h-full">
-                        <div
-                            class="w-12 h-12 rounded-sm flex items-center justify-center mb-6 text-blue-600"
-                        >
-                            <img
-                                class="logo-for-app"
-                                src="https://ourbharat.online/logo/logo.png"
-                                alt="Graduation Logo"
-                            />
-                        </div>
-                        <h3 class="text-xl font-bold mb-2">OurBharat</h3>
-                        <p class="text-sm mb-8 flex-grow leading-relaxed">
-                            One-stop digital gateway to 250+ District
-                            Administration portals, official press releases, and
-                            government social media handles across India.
-                        </p>
-                        <a
-                            href="https://www.ourbharat.online"
-                            target="_blank"
-                            class="w-full py-2.5 text-center border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-sm hover:border-blue-600 hover:text-blue-600 transition-colors text-sm font-medium"
-                        >
-                            Visit www.ourbharat.online
-                            <i class="fa fa-arrow-right ml-1 text-xs"></i>
-                        </a>
                     </div>
                 </div>
             </section>
@@ -1101,9 +1278,28 @@
                 });
             }, observerOptions);
 
-            document
-                .querySelectorAll(".naro-card")
-                .forEach((card) => observer.observe(card));
+            // Ecosystem Category Filtering Interactive Script
+            const ecoTabBtns = document.querySelectorAll(".ecosystem-tab-btn");
+            const ecoCategoryGroups = document.querySelectorAll(".eco-category-group");
+
+            ecoTabBtns.forEach((tab) => {
+                tab.addEventListener("click", () => {
+                    const filter = tab.getAttribute("data-filter");
+
+                    ecoTabBtns.forEach((b) => b.classList.remove("active"));
+                    tab.classList.add("active");
+
+                    ecoCategoryGroups.forEach((group) => {
+                        const category = group.getAttribute("data-category-group");
+                        if (filter === "all" || filter === category) {
+                            group.style.display = "block";
+                            group.classList.add("animate-fade");
+                        } else {
+                            group.style.display = "none";
+                        }
+                    });
+                });
+            });
 
             window.onload = initTheme;
         </script>

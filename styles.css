@@ -18,19 +18,19 @@
     --brand-blue: #0067ff;
     --brand-hover: #0052cc;
 
-    /* Light Theme (Snowwhite/naro Light) */
-    --bg-body: #fffafa; /* Snowwhite */
+    /* Light Theme (High Contrast Crisp Enterprise Light) */
+    --bg-body: #ffffff;
     --bg-surface: #ffffff;
-    --bg-subtle: #f3f4f6;
-    --text-primary: #111827;
-    --text-secondary: #4b5563;
-    --text-tertiary: #9ca3af;
-    --border-light: #e5e7eb;
+    --bg-subtle: #f8fafc; /* Crisp Slate 50 background */
+    --text-primary: #0f172a; /* Slate 900 - Deep crisp text */
+    --text-secondary: #334155; /* Slate 700 - Highly legible body text */
+    --text-tertiary: #475569; /* Slate 600 - High contrast secondary text */
+    --border-light: #cbd5e1; /* Slate 300 - Clear visible borders */
     --border-hover: #0067ff;
     --shadow-card:
-        0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+        0 1px 3px 0 rgba(0, 0, 0, 0.08), 0 1px 2px 0 rgba(0, 0, 0, 0.04);
     --shadow-hover:
-        0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        0 4px 12px -2px rgba(0, 103, 255, 0.15), 0 2px 6px -1px rgba(0, 0, 0, 0.06);
 
     /* Animation Timings */
     --enter-duration: 0.5s;
@@ -43,9 +43,9 @@
     --bg-body: #000000; /* Jetblack */
     --bg-surface: #0a0a0a;
     --bg-subtle: #121212;
-    --text-primary: #f9fafb;
-    --text-secondary: #d1d5db;
-    --text-tertiary: #6b7280;
+    --text-primary: #f8fafc;
+    --text-secondary: #cbd5e1;
+    --text-tertiary: #94a3b8;
     --border-light: #27272a;
     --border-hover: #0067ff;
     --shadow-card: none;
@@ -472,6 +472,10 @@ section.exit {
     color: var(--text-tertiary);
     animation: fadeIn 0.6s ease-out;
     font-size: 1.05rem; /* Increased */
+}
+.text-secondary {
+    color: var(--text-secondary);
+    animation: fadeIn 0.6s ease-out;
 }
 .text-main {
     color: var(--text-primary);
@@ -1241,3 +1245,46 @@ span {
     margin: auto;
     top: 100px;
 }
+
+/* --- ECOSYSTEM UTILITIES & LOGO BOXES --- */
+.logo-for-app {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.ecosystem-tab-btn {
+    padding: 0.5rem 1.25rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    border-radius: 2px;
+    border: 1px solid var(--border-light);
+    background-color: var(--bg-surface);
+    color: var(--text-primary);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.ecosystem-tab-btn:hover {
+    border-color: var(--brand-blue);
+    color: var(--brand-blue);
+}
+
+.ecosystem-tab-btn.active {
+    background-color: var(--brand-blue);
+    border-color: var(--brand-blue);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 103, 255, 0.25);
+}
+
+.ecosystem-category-badge {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.5rem;
+    border-radius: 2px;
+}
+
