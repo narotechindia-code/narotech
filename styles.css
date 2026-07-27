@@ -22,9 +22,9 @@
     --bg-body: #ffffff;
     --bg-surface: #ffffff;
     --bg-subtle: #f8fafc; /* Crisp Slate 50 background */
-    --text-primary: #0f172a; /* Slate 900 - Deep crisp text */
-    --text-secondary: #334155; /* Slate 700 - Highly legible body text */
-    --text-tertiary: #475569; /* Slate 600 - High contrast secondary text */
+    --text-primary: #0f172a; /* Slate 900 - Deep crisp heading text */
+    --text-secondary: #1e293b; /* Slate 800 - Ultra crisp body text */
+    --text-tertiary: #334155; /* Slate 700 - High contrast secondary text */
     --border-light: #cbd5e1; /* Slate 300 - Clear visible borders */
     --border-hover: #0067ff;
     --shadow-card:
@@ -1287,4 +1287,195 @@ span {
     padding: 0.2rem 0.5rem;
     border-radius: 2px;
 }
+
+/* --- FEATURED SPOTLIGHT CAROUSEL --- */
+.spotlight-carousel-section {
+    background: linear-gradient(180deg, var(--bg-surface) 0%, var(--bg-subtle) 100%);
+    border-top: 1px solid var(--border-light);
+    border-bottom: 1px solid var(--border-light);
+}
+
+.spotlight-nav-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: 4px;
+    border: 1px solid var(--border-light);
+    background: var(--bg-surface);
+    color: var(--text-secondary);
+    transition: all 0.25s ease;
+    cursor: pointer;
+    display: inline-flex;
+    items-center;
+    gap: 0.5rem;
+}
+
+.spotlight-nav-btn:hover {
+    border-color: var(--brand-blue);
+    color: var(--brand-blue);
+}
+
+.spotlight-nav-btn.active {
+    background: var(--brand-blue);
+    border-color: var(--brand-blue);
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 103, 255, 0.3);
+}
+
+.spotlight-card-body {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease;
+}
+
+.spotlight-card-body:hover {
+    border-color: rgba(0, 103, 255, 0.4);
+    box-shadow: 0 15px 40px rgba(0, 103, 255, 0.08);
+}
+
+/* --- SYSTEM ARCHITECTURE FLOW DIAGRAM --- */
+.arch-diagram-wrapper {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    padding: 2rem;
+    position: relative;
+}
+
+.arch-tier-card {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-light);
+    border-radius: 6px;
+    padding: 1.25rem;
+    transition: all 0.25s ease;
+}
+
+.arch-tier-card:hover {
+    border-color: var(--brand-blue);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.arch-node-badge {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-light);
+    color: var(--text-primary);
+    padding: 0.5rem 0.85rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    transition: all 0.2s ease;
+}
+
+.arch-node-badge:hover {
+    border-color: var(--brand-blue);
+    color: var(--brand-blue);
+}
+
+.arch-connector-line {
+    height: 2px;
+    background: linear-gradient(90deg, #0067FF 0%, #3B82F6 50%, #10B981 100%);
+    position: relative;
+    margin: 1.5rem 0;
+}
+
+.arch-connector-pulse {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background: #0067FF;
+    border-radius: 50%;
+    animation: archPulse 3s infinite linear;
+}
+
+@keyframes archPulse {
+    0% { left: 0%; opacity: 0.2; }
+    50% { opacity: 1; }
+    100% { left: 100%; opacity: 0.2; }
+}
+
+/* --- ECOSYSTEM SEARCH BAR & LIVE COUNTER --- */
+.search-wrapper-container {
+    position: relative;
+    max-width: 52rem;
+    margin: 0 auto 2.5rem auto;
+}
+
+.search-input-field {
+    width: 100%;
+    padding: 0.85rem 3rem 0.85rem 3rem;
+    font-size: 0.95rem;
+    border-radius: 6px;
+    border: 1.5px solid var(--border-light);
+    background-color: var(--bg-surface);
+    color: var(--text-primary);
+    transition: all 0.25s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+}
+
+.search-input-field:focus {
+    outline: none;
+    border-color: var(--brand-blue);
+    box-shadow: 0 0 0 4px rgba(0, 103, 255, 0.15);
+}
+
+.search-icon-left {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-tertiary);
+    font-size: 1rem;
+    pointer-events: none;
+}
+
+.search-clear-btn {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-tertiary);
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 0.2rem 0.4rem;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+    display: none;
+}
+
+.search-clear-btn:hover {
+    color: #ef4444;
+    background-color: rgba(239, 68, 68, 0.1);
+}
+
+.search-stats-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.35rem 0.85rem;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-light);
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.search-no-results-box {
+    text-align: center;
+    padding: 3rem 1.5rem;
+    background: var(--bg-surface);
+    border: 1px dashed var(--border-light);
+    border-radius: 8px;
+    margin: 2rem 0;
+    display: none;
+}
+
 
